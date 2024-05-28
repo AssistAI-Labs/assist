@@ -1,1 +1,1 @@
-# assist
+# AssistAI Labs
