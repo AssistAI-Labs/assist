@@ -4,13 +4,13 @@ AssistAI Labs is a company driven by the potential of artificial intelligence (A
 
 ## Our team of passionate engineers, designers, and AI specialists is dedicated to creating robots that are:
 
-### Intelligent: Powered by cutting-edge AI and machine learning, our robots can learn, adapt, and solve complex problems alongside humans.
+ Intelligent: Powered by cutting-edge AI and machine learning, our robots can learn, adapt, and solve complex problems alongside humans.
 
-### User-friendly: Designed with intuitive interfaces and seamless integration, our robots empower everyone to interact with AI assistants effortlessly.
+ User-friendly: Designed with intuitive interfaces and seamless integration, our robots empower everyone to interact with AI assistants effortlessly.
 
-### Versatile: We develop robots capable of handling diverse tasks across various applications, from industrial automation to healthcare and beyond.
+ Versatile: We develop robots capable of handling diverse tasks across various applications, from industrial automation to healthcare and beyond.
 
-### Sustainable: We prioritize eco-conscious materials and practices to minimize the environmental impact of our creations.
+ Sustainable: We prioritize eco-conscious materials and practices to minimize the environmental impact of our creations.
 
 ## Our Mission
 
@@ -31,8 +31,11 @@ We are always seeking talented and passionate individuals to join our team. If y
 Follow us on social media to stay updated on our latest advancements, projects, and insights into the world of AI and intelligent automation.
 
 Link to your Facebook page
+
 Link to your Twitter page
+
 Link to your LinkedIn page
+
 Link to your YouTube channel (if applicable)
 
 We are AssistAI Labs, and we are empowering humans with intelligent automation.
