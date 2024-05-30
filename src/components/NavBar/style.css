@@ -1,43 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 .navbar {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     width: 100%;
-    background-color: #060000;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1b1b1b;
-    padding-bottom: 10px;
+    background-color: #fdfdfd;
+    padding-bottom: 1rem;
+    width: 20rem;
+  }
+
+  .navbar-logo h1 {
+    color: #000000;
+    font-family: "Acme", sans-serif;
   }
 
   .logo-image {
     width: 4rem;
-    margin-right: 10px
+    margin-right: 1rem;
   }
   
   .navbar-list {
-    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    color:#000000;
   }
   
-  .navbar-list li {
+  .navbar-list-items {
     margin: 0;
     padding: 0.5rem 1rem;
+    font-weight: 900;
+    font-size: large;
   }
   
   .navbar-list a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   
-  .navbar-list a:hover {
-    text-decoration: underline;
-  }
+  .navbar-list-items a:hover {
+    color: #8f00fc;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c9c9c, 0 0 40px #9c9c9c, 0 0 70px #9c9c9c, 0 0 80px #9c9c9c, 0 0 100px #9c9c9c, 0 0 150px #9c9c9c;
+}
+
   

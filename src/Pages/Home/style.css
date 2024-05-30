@@ -1,0 +1,52 @@
+
+#home {
+    background-color: #fefefe;
+    justify-content: space-around !important;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.intro-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sub-text {
+    padding-top: 1rem;
+    font-size: x-large;
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px #02f612);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgb(104, 245, 4)) drop-shadow(0 0 30px #ff0) drop-shadow(0 0 40px #ff0);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px #d9ff00);
+    }
+}
+
+.glow-container {
+    flex: 1;
+    display: flex;
+    padding: 1.5rem; 
+    justify-content: center;
+    background: rgb(255, 255, 255); 
+    border-radius: 10px; 
+}
+
+.glowing-image {
+    display: flex;
+    width: 60%; 
+    height: auto;
+    animation: glow 3s infinite;
+}
+

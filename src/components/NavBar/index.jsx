@@ -1,23 +1,61 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-// import StartUpLogo from '../StartUpLogo';
-import logo from '../../assets/logo.jpg'
+import logo from '../../assets/logo.ico'
 import './style.css'
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   return (
-    <nav className='navbar'>
+    <div className='navbar'>
       <div className='navbar-logo'>
         <img src={logo} alt="" className='logo-image'/>
         <h1>Assist AI Labs</h1>
       </div>
-      <ul className='navbar-list'>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about-us">About us</Link></li>
-        <li><Link to="/contact-us">Contact us</Link></li>
-        <li><Link to="/our-team">Our team</Link></li>
-      </ul>
-    </nav>
+      <div className='navbar-list'>
+        <div className='navbar-list-items'><Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Home
+          </Link>
+        </div>
+        <div className='navbar-list-items'>
+          <Link
+            to="aboutUs"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            About us
+          </Link>
+        </div>
+        <div className='navbar-list-items'>
+          <Link
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact us
+          </Link>
+        </div>
+        <div className='navbar-list-items'>
+          <Link
+            to="ourTeam"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Our team
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 

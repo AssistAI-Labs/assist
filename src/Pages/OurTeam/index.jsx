@@ -1,8 +1,9 @@
 import React from 'react'
+import './style.css'
 
 const OurTeam = () => {
   return (
-    <div>OurTeam</div>
+    <div className='section' id="our-team">OurTeam</div>
   )
 }
 

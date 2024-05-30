@@ -1,8 +1,9 @@
 import React from 'react'
+import './style.css'
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <div className='section' id="contact-us">Contact us</div>
   )
 }
 
