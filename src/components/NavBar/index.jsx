@@ -40,17 +40,6 @@ const NavBar = () => {
             </div>
             <div className='navbar-list-items'>
               <Link
-                to="contactUs"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Contact us
-              </Link>
-            </div>
-            <div className='navbar-list-items'>
-              <Link
                 to="ourTeam"
                 spy={true}
                 smooth={true}
@@ -58,6 +47,17 @@ const NavBar = () => {
                 duration={500}
               >
                 Our team
+              </Link>
+            </div>
+            <div className='navbar-list-items'>
+              <Link
+                to="contactUs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact us
               </Link>
             </div>
           </div>

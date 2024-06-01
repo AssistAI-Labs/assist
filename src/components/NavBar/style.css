@@ -1,15 +1,16 @@
 
   .navbar {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     padding: 0;
-    height: 10rem;
-    width: calc(100% - 3rem);
+    height: 8rem;
+    width: calc(100% - 8rem);
     background-color: #000000;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     position: sticky;
+    /* border: solid 1px #0beffa; */
   }
 
   .navbar-logo {
@@ -18,6 +19,7 @@
     align-items: center;
     background-color: #00000000;
     padding-bottom: 1rem;
+    justify-content: flex-start;
     width: 20rem;
   }
 
@@ -45,7 +47,7 @@
 
   .navbar-list-items {
     margin: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     font-weight: 900;
     font-size: large;
   }
@@ -58,7 +60,9 @@
   .navbar-list-items a:hover {
     color: #0beffa;
     cursor: pointer;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c9c9c, 0 0 40px #9c9c9c, 0 0 70px #9c9c9c, 0 0 80px #9c9c9c, 0 0 100px #9c9c9c, 0 0 150px #9c9c9c;
+    text-decoration: underline;
+    text-underline-offset: 10px; 
+    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c9c9c, 0 0 40px #9c9c9c, 0 0 70px #9c9c9c, 0 0 80px #9c9c9c, 0 0 100px #9c9c9c, 0 0 150px #9c9c9c; */
 }
 
 /* for middle screen devices */
@@ -69,7 +73,7 @@
   }
   .navbar-list-mobile {
     display: flex;
-    height: 15rem;
+    height: 20rem;
     z-index: 99;
     width: 100%;
     align-items: center;
@@ -83,6 +87,7 @@
     background-color: rgba(0, 0, 0, 0.79);
     right: 0;
   }
+
   .menu-button-div{
     display: flex;
     margin: 1.5rem 1.5rem 2rem 1.5rem;
@@ -103,6 +108,9 @@
   }
   .navbar {
     height: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: calc(100% - 3rem);
   }
   .logo-image{
     width: 7rem;
@@ -118,7 +126,7 @@
 @media (max-width: 480px) {  
   .navbar-list-mobile {
     padding-top: 0.5rem;
-    height: 10rem;  
+    height: 20rem;  
     width: 10rem;  
   }
   .menu-button {
