@@ -1,7 +1,8 @@
 
 #home {
-    background-color: #fefefe;
+    background-color: #000000;
     justify-content: space-around !important;
+    color: #fff
 }
 
 .home-text {
@@ -39,14 +40,16 @@
     display: flex;
     padding: 1.5rem; 
     justify-content: center;
-    background: rgb(255, 255, 255); 
+    background: #ffffff00; 
     border-radius: 10px; 
 }
 
 .glowing-image {
     display: flex;
-    width: 60%; 
+    width: auto; 
     height: auto;
     animation: glow 3s infinite;
+    z-index: 30; /* Updated z-index */
+    position: relative; /* Added position */
 }
 

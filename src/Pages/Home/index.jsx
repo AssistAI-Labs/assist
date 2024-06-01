@@ -1,5 +1,5 @@
 import React from 'react'
-import robotimg from '../../assets/robo16.png'
+// import robotimg from '../../assets/robo16.png'
 import './style.css'
 
 const Home = () => {
@@ -14,9 +14,9 @@ const Home = () => {
           Get back to what matters most. Relax, recharge, and let your robots do the rest.
         </div>
       </div>
-      <div className='glow-container'>
+      {/* <div className='glow-container'>
         <img src={robotimg} alt="" className='glowing-image'/>
-      </div>
+      </div> */}
     </div>
   )
 }

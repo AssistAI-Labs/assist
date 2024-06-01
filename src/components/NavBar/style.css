@@ -1,33 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-.navbar {
-    /* position: sticky; */
-    top: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    z-index: 1000;
+  .navbar {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+    height: 10rem;
+    width: calc(100% - 3rem);
+    background-color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
+    position: sticky;
   }
 
   .navbar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fdfdfd;
+    background-color: #00000000;
     padding-bottom: 1rem;
     width: 20rem;
   }
 
-  .navbar-logo h1 {
-    color: #000000;
-    font-family: "Acme", sans-serif;
+  .logo-image {
+    width: 10rem;
+    /* margin-right: 1rem; */
   }
 
-  .logo-image {
-    width: 4rem;
-    margin-right: 1rem;
+  .outer-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-button-div {
+    display: none;
   }
   
   .navbar-list {
@@ -37,7 +42,7 @@
     align-items: center;
     color:#000000;
   }
-  
+
   .navbar-list-items {
     margin: 0;
     padding: 0.5rem 1rem;
@@ -46,13 +51,84 @@
   }
   
   .navbar-list a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   
   .navbar-list-items a:hover {
-    color: #8f00fc;
+    color: #0beffa;
+    cursor: pointer;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c9c9c, 0 0 40px #9c9c9c, 0 0 70px #9c9c9c, 0 0 80px #9c9c9c, 0 0 100px #9c9c9c, 0 0 150px #9c9c9c;
 }
+
+/* for middle screen devices */
+
+@media (max-width: 768px) {  
+  .navbar-list{
+    display: none;
+  }
+  .navbar-list-mobile {
+    display: flex;
+    height: 15rem;
+    z-index: 99;
+    width: 100%;
+    align-items: center;
+    color:#ffffff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.79);
+    right: 0;
+  }
+  .menu-button-div{
+    display: flex;
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  .menu-button {
+    border: none;
+    font-size: large;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+  }
+  .outer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 20rem;
+    width: 15rem;
+  }
+  .navbar {
+    height: 5rem;
+  }
+  .logo-image{
+    width: 7rem;
+  }
+  .navbar-logo {
+    width: 10rem;
+    padding-top: 1rem;
+  }
+}
+
+/* for low screen devices */
+
+@media (max-width: 480px) {  
+  .navbar-list-mobile {
+    padding-top: 0.5rem;
+    height: 10rem;  
+    width: 10rem;  
+  }
+  .menu-button {
+    border: none;
+    font-size: large;
+    color: #ffffff;
+    background-color: #000000;
+    cursor: pointer;
+  }
+}
+
 
   
