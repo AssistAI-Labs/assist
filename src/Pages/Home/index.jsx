@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import robotimg from '../../assets/robo.png'
+import robotimg from '../../assets/robo14.png'
 import './style.css'
 import TypingEffect from '../../components/TypingEffect'
 
@@ -18,10 +18,10 @@ const Home = () => {
     <div className='home-section'>
       <div className='home-content-container'>
       <div className='main-heading'>
-      <TypingEffect text={"Welcome to the future of"} speed={100} callback={handleFirstPartComplete} />
+      <TypingEffect text={"Welcome to the future of"} callback={handleFirstPartComplete} />
       {firstPartDone && (
         <span className='highlight-text'>
-          <TypingEffect text={" clean & carefree living!"} speed={100} callback={handleSecondPartComplete}/>
+          <TypingEffect text={" clean & carefree living!"} callback={handleSecondPartComplete}/>
         </span>
       )}
     </div>
@@ -32,8 +32,15 @@ const Home = () => {
       )}
       </div>
 
+      <div className='home-buttons-container'>
+        <button className='home-button-explore'>Explore</button>
+        <button className='home-button-contact'>Contact us</button>
+      </div>
+
       <div className={secondPartDone ? "home-image-container show" : "home-image-container"}>
-        <img src={robotimg} className="home-image"alt="Description" />
+        <div className='home-image-background'>
+          <img src={robotimg} className="home-image"alt="Description" />
+        </div>
       </div>
     </div>
   )

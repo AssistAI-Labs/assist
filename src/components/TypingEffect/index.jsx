@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TypingEffect = ({ text, speed = 40, callback }) => {
+const TypingEffect = ({ text, callback }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -9,12 +9,12 @@ const TypingEffect = ({ text, speed = 40, callback }) => {
       const timer = setTimeout(() => {
         setDisplayedText((prev) => prev + text[index]);
         setIndex((prev) => prev + 1);
-      }, speed);
+      }, 50);
       return () => clearTimeout(timer);
     } else if (callback) {
       callback();
     }
-  }, [index, text, speed, callback]);
+  }, [index, text, callback]);
 
   return <span>{displayedText}</span>;
 };

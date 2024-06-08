@@ -1,34 +1,41 @@
 
 .home-section {
-    height: 100vh; 
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    flex-direction: column;
+    /* margin-left: 1.5rem;
+    margin-right: 1.5rem; */
     margin-bottom: 1.5rem;
-    width: calc(100% - 3rem); 
+    width: calc(100%); 
     background-color: #000000;
+    /* background-image: url('../../assets/homeback.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
 }
 
 /* :start */
   
   .home-content-container {
-    width: 50%; 
+    width: 100%; 
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
   }
 
   .main-heading { 
-    margin-left: 4rem;
-    font-size: 4rem;
+    font-size: 3rem;
+    margin: 0 20rem;
   }
 
   .highlight-text {
-    color: #0beffa;
+    background: linear-gradient(to right, #0beffa,#05A3A9, #193d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   @keyframes fadeIn {
@@ -41,9 +48,9 @@
   }
   
   .sub-content {
-    margin-left: 4rem;
-    margin-top: 1rem;
-    font-size: 2rem;
+    margin: 0 20rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
     opacity: 0;
     animation: fadeIn 1s ease-in; /* Adjust duration and easing as needed */
   }
@@ -72,35 +79,95 @@
       transform: translateX(0); /* Reset the position */
     }
   }
-  
-  .home-image-container {
-    width: 50%;
+
+  .home-buttons-container {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    opacity: 0; /* Set initial opacity to 0 */
+    align-items: center;
+    width: 100%;
+  }
+
+  .home-button-explore, .home-button-contact {
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 0.5rem ;
+    font-size: 1rem;
+  }
+
+  .home-button-explore:hover, .home-button-contact:hover {
+    cursor: pointer;
+  }
+
+  .home-button-contact:hover {
+    color: #ffffff;
+    background: linear-gradient(to right, #0beffa,#05A3A9,#193d86);
+    border: none;
+  }
+
+  .home-button-explore {
+    margin-right: 10rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #0beffa,#05A3A9,#193d86);
+    border: none;
+  }
+
+  .home-button-contact {
+    color: #0beffa;
+    background-color: #000000;
+    border-color: #0beffa;
+  }
+  
+  .home-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
   }
   
   .home-image-container.show {
     animation: slideInFromLeft 1s ease-in forwards; /* Apply animation */
   }
   
+  .home-image-background {
+    display: flex;
+    width: 50%;
+    background-image: url("../../assets/roboback.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: dimGlow 3s infinite;
+    justify-content: center;
+  }
+
+  @keyframes dimGlow {
+    0%, 100% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(90%);
+    }
+}
   .home-image {
     max-width: 100%;
     height: auto;
+    margin: 5rem;
+    /* margin-top: 0; */
+    transform: scaleX(-1);
   }
-  
-  
   
   @media (max-width: 768px) {
     .home-section {
       flex-direction: column;
       align-items: center;
       height: auto;
-      margin-top: 4rem;;
+      margin-top: 4rem;
     }
 
     .main-heading, .sub-content {
-        margin-left: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .main-heading {
@@ -114,6 +181,8 @@
     .home-content-container,
     .home-image-container {
       width: 100%; 
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
   
     .home-image-container {
