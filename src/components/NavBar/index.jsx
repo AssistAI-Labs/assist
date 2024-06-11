@@ -34,6 +34,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                activeClass="active"
               >
                 About us
               </Link>

@@ -1,0 +1,32 @@
+.footer-section {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 100%; 
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.logo {
+    width: 8rem;
+    margin: auto;
+}
+
+.extra-detail {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 0.5rem;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+.footer-text {
+    font-size: 0.6rem;
+    margin: 1rem 0;
+}

@@ -27,8 +27,8 @@
   }
 
   .main-heading { 
-    font-size: 3rem;
-    margin: 0 20rem;
+    font-size: 2rem;
+    margin: 0 18.3rem;
   }
 
   .highlight-text {
@@ -50,7 +50,7 @@
   .sub-content {
     margin: 0 20rem;
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     opacity: 0;
     animation: fadeIn 1s ease-in; /* Adjust duration and easing as needed */
   }
@@ -89,10 +89,10 @@
   }
 
   .home-button-explore, .home-button-contact {
-    width: 10rem;
-    height: 3.5rem;
+    width: 8rem;
+    height: 3rem;
     border-radius: 0.5rem ;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .home-button-explore:hover, .home-button-contact:hover {
@@ -136,7 +136,6 @@
     background-image: url("../../assets/roboback.png");
     background-size: cover;
     background-position: center;
-    position: relative;
     animation: dimGlow 3s infinite;
     justify-content: center;
   }
@@ -169,24 +168,27 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
-    .main-heading {
-        font-size: 2.5rem;
-    }
-
-    .sub-content {
-        font-size: 1.5rem;
-    }
   
     .home-content-container,
-    .home-image-container {
+    .home-buttons-container {
       width: 100%; 
       margin-left: 1.5rem;
       margin-right: 1.5rem;
     }
-  
-    .home-image-container {
-      margin-top: 20px; 
+    
+    .home-button-explore {
+      margin-right: 2rem;
+    }
+    .home-image {
+      max-width: 100%;
+      height: auto;
+      margin: 2rem;
+      /* margin-top: 0; */
+      transform: scaleX(-1);
+    }
+    .home-image-background {
+      padding: 0 2rem;
+      background-size: cover;
     }
   }
   

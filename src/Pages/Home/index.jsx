@@ -4,8 +4,8 @@ import './style.css'
 import TypingEffect from '../../components/TypingEffect'
 
 const Home = () => {
-  const [firstPartDone, setFirstPartDone] = useState(false);
-  const [secondPartDone, setSecondPartDone] = useState(false);
+  const [firstPartDone, setFirstPartDone] = useState(true);
+  const [secondPartDone, setSecondPartDone] = useState(true);
 
   const handleFirstPartComplete = () => {
     setFirstPartDone(true);
@@ -18,12 +18,16 @@ const Home = () => {
     <div className='home-section'>
       <div className='home-content-container'>
       <div className='main-heading'>
-      <TypingEffect text={"Welcome to the future of"} callback={handleFirstPartComplete} />
+      {/* <TypingEffect text={"Welcome to the future of"} callback={handleFirstPartComplete} />
       {firstPartDone && (
         <span className='highlight-text'>
           <TypingEffect text={" clean & carefree living!"} callback={handleSecondPartComplete}/>
         </span>
-      )}
+      )} */}
+      Welcome to the future of&nbsp;
+      <span className='highlight-text'>
+          clean & carefree living!
+        </span>
     </div>
         {secondPartDone && (
         <div className={secondPartDone ? "sub-content show" : "sub-content"}>

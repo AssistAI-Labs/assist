@@ -1,9 +1,9 @@
 import NavBar from "./components/NavBar"
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
-// import { Route, Routes } from 'react-router-dom';
 import OurTeam from "./Pages/OurTeam";
 import ContactUs from "./Pages/ContactUs";
+import Footer from "./Pages/Footer";
 import { Element } from "react-scroll";
 import './App.css'
 
@@ -17,12 +17,13 @@ function App() {
       <Element name="aboutUs">
         <AboutUs />
       </Element>
-      <Element name="contactUs">
-        <ContactUs />
-      </Element>
       <Element name="ourTeam">
         <OurTeam />
       </Element>
+      <Element name="contactUs">
+        <ContactUs />
+      </Element>
+      <Footer />
       {/* <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about-us" element={<AboutUs/>} />

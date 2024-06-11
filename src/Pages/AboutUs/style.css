@@ -1,5 +1,133 @@
-#about-us{
-    /* background-color: aqua; */
-    background-image: url("../../assets/aboutback.png");
-    background-size: cover;
+.about-section {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%; 
+    background-color: #000000;
+    color: #ffffff;
 }
+
+.about-main-heading-1 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #0beffa,#193d86, #193d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 4rem;
+}
+
+.about-part-1 {
+    display: flex;
+    margin: 4rem;
+}
+
+.about-part-1-image-container {
+    width: 50%;
+    /* display: flex; */
+}
+
+.about-part-1-image {
+    transform: scaleX(-1);
+    width: 60%;
+    display: block; margin-left: auto; margin-right: auto;
+}
+
+.about-part-1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: centers;
+    width: 50%;
+}
+
+.about-part-1-content-heading {
+    color: #0beffa;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-part-1-content-text {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.about-part-2 {
+    color: #fff;
+    text-align: center;
+    margin: 2rem 4rem;
+}
+
+.about-part-2-content {
+    color: #fff;
+    text-align: center;
+    margin: 0 4rem;
+}
+
+.about-part-2-video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+
+video {
+    -webkit-touch-callout: none;
+    width: 40rem;
+}
+
+.survey-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.survey-content-part {
+    display: flex;
+    flex-direction: column;
+    width: calc(60%-8rem);
+    margin: 4rem;
+}
+
+.survey-title {
+    font-size: 2rem;
+    background: linear-gradient(to right, #0beffa,#193d86, #193d86);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.survey-content {
+    font-size: 1rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.survey-button-part {
+    width: auto;
+    margin-top: 1rem;
+}
+
+.survey-button {
+    border-style: none;
+    background: linear-gradient(to right, #0beffa,#05A3A9,#193d86);
+    color: #fff;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.survey-image-part {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.survey-image {
+    width: 12rem;
+    height: 12rem;
+}
+

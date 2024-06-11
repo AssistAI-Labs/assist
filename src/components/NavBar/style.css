@@ -12,6 +12,7 @@
     position: sticky;
     /* border: solid 1px #0beffa; */
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
 
   .navbar-logo {
@@ -50,7 +51,7 @@
     margin: 0;
     padding: 0.5rem 1.5rem;
     font-weight: 900;
-    font-size: large;
+    font-size: medium;
   }
   
   .navbar-list a {
@@ -119,6 +120,10 @@
   .navbar-logo {
     width: 10rem;
     padding-top: 1rem;
+  }
+
+  .navbar-list-items {
+    font-size: small;
   }
 }
 
