@@ -2,9 +2,9 @@
     height: auto; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4rem;
-    width: 100%; 
+    /* justify-content: center; */
+    margin: 4rem;
+    width: calc(100% - 8rem); 
     background-color: #000000;
     color: #ffffff;
     text-align: center;
@@ -29,4 +29,13 @@
 .footer-text {
     font-size: 0.6rem;
     margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 6rem;
+    }
+    .footer-section {
+        width: calc(100%-4rem);
+    }
 }

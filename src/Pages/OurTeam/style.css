@@ -2,8 +2,8 @@
     height: auto; 
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
-    width: 100%; 
+    margin: 4rem;
+    width: calc(100% - 8rem); 
     background-color: #000000;
     color: #ffffff;
 }
@@ -14,11 +14,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0 4rem 2rem 4rem;
+    margin-bottom: 2rem;
 }
 
 .team-container {
-    margin: 0 4rem;
     display: flex;
-    width: calc(100%-8rem);
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        margin: 2rem;
+        width: calc(100% - 4rem); 
+    }
+    .team-heading {
+        font-size: 1.5rem;
+    }
+    .team-container {
+        flex-direction: column;
+    }
 }

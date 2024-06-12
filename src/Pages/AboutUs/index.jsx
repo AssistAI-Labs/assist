@@ -1,8 +1,8 @@
-import React from "react"
-import robotimg from "../../assets/robo.png"
-import surveyimg from "../../assets/survey.png"
-import circleVideo from "../../assets/rotatingcircle.mp4"
-import "./style.css"
+import React from "react";
+import robotimg from "../../assets/robo.png";
+import surveyimg from "../../assets/survey.png";
+import circleVideo from "../../assets/rotatingcircle.mp4";
+import "./style.css";
 
 const AboutUs = () => {
   return (
@@ -47,11 +47,10 @@ const AboutUs = () => {
 
       <div className="survey-container">
         <div className="survey-content-part">
-          <div className="survey-title">
-            Help us make smarter Homes
-          </div>
+        <div className="survey-title">Help us make smarter Homes</div>
           <div className="survey-content">
-            Your thoughts shape our robots. Take our quick survey (5 min) and share what matters in your home life.
+            Your thoughts shape our robots. Take our quick survey (5 min) and
+            share what matters in your home life.
             <br />
             <br />
             Click below to share your voice.

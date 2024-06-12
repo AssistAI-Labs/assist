@@ -66,3 +66,11 @@
     margin: 1rem 0;
     color: #0beffa;
 }
+
+@media (max-width: 768px) {
+    .profile-box {
+        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}

@@ -2,8 +2,8 @@
     height: auto; 
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
-    width: 100%; 
+    margin: 4rem;
+    width: calc(100% - 8rem); 
     background-color: #000000;
     color: #ffffff;
 }
@@ -14,7 +14,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-left: 4rem;
 }
 
 .about-part-1 {
@@ -30,7 +29,9 @@
 .about-part-1-image {
     transform: scaleX(-1);
     width: 60%;
-    display: block; margin-left: auto; margin-right: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .about-part-1-content {
@@ -52,22 +53,21 @@
 }
 
 .about-part-2 {
-    color: #fff;
-    text-align: center;
-    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
 .about-part-2-content {
     color: #fff;
     text-align: center;
-    margin: 0 4rem;
 }
 
 .about-part-2-video-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 2rem 0;
 }
 
 
@@ -86,7 +86,7 @@ video {
     display: flex;
     flex-direction: column;
     width: calc(60%-8rem);
-    margin: 4rem;
+    margin: 4rem 0;
 }
 
 .survey-title {
@@ -129,5 +129,58 @@ video {
 .survey-image {
     width: 12rem;
     height: 12rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        margin: 2rem;
+        width: calc(100% - 4rem); 
+    }
+    .about-part-1 {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .about-main-heading-1, .survey-title {
+        font-size: 1.5rem;
+    }
+
+    .about-part-1-content-heading {
+        font-size: 1rem;
+    }
+
+    .about-part-1-content-text, .about-part-2-content,
+    .survey-content {
+        font-size: 0.8rem;
+    }
+
+    .about-part-1-image-container {
+        width: 100%;
+    }
+
+    .about-part-1-image {
+        width: 11.5rem;
+    }
+
+    .about-part-1-content-heading {
+        margin: 1rem 0;
+    }
+
+    .about-part-1-content {
+        width: 100%;
+    }
+
+    .about-part-2-content {
+        margin: auto;
+    }
+    video {
+        width: 20rem;
+    }
+    .survey-container {
+        flex-direction: column;
+    }
+    .survey-image-part {
+        margin: auto;
+    }
 }
 

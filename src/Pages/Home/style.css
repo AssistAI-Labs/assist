@@ -5,15 +5,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    /* margin-left: 1.5rem;
-    margin-right: 1.5rem; */
     margin-bottom: 1.5rem;
     width: calc(100%); 
     background-color: #000000;
-    /* background-image: url('../../assets/homeback.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
 /* :start */
@@ -167,6 +161,14 @@
     .main-heading, .sub-content {
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+
+    .main-heading {
+      font-size: 1.5rem;
+    }
+
+    .sub-content {
+      font-size: 0.8rem;
     }
   
     .home-content-container,

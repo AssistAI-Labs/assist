@@ -2,8 +2,8 @@
     height: auto; 
     display: flex;
     flex-direction: column;
-    margin: 4rem 0;
-    width: 100%; 
+    margin: 4rem ;
+    width: calc(100% - 8rem); 
     background-color: #000000;
     color: #ffffff;
 }
@@ -27,8 +27,6 @@
 
 .contact-form-container {
     display: flex;
-    width: calc(100%-8rem);
-    margin : 2rem 4rem;
     justify-content: center;
 }
 
@@ -63,7 +61,25 @@
     background: linear-gradient(to right, #0beffa,#05A3A9,#193d86);
     border-style: none;
     border-radius: 0.5rem;
-    margin: 2rem 10rem;
+    margin: auto;
+    margin-top: 2rem;
     color: #ffffff;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        margin: 2rem;
+        width: calc(100% - 4rem); 
+    }
+    .contact-heading {
+        font-size: 1.5rem;
+    }
+    .contact-content {
+        font-size: 0.8rem;
+    }
+    .contact-form {
+        width: 100%;
+    }
+
 }
