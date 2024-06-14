@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import robotimg from "../../assets/robo.png";
 import surveyimg from "../../assets/survey.png";
+import arrow1 from "../../assets/arrow1.png";
+import arrow2 from "../../assets/arrow2.png";
+import arrow3 from "../../assets/arrow3.png";
 import circleVideo from "../../assets/rotatingcircle.mp4";
 import "./style.css";
 
 const AboutUs = () => {
+  
+  useEffect(() => {
+    const offerings = document.querySelectorAll(".offerings")
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach (entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      })
+    }, { threshold: 0.5 })
+
+    if(offerings.length) {
+      offerings.forEach (offer => {
+        observer.observe(offer)
+      })
+    }
+
+  }, [])
+
+  const openForm = () => {
+    window.open('https://forms.gle/fXJFUXBSubQUz6zC9', '_blank');
+  };
+
+
   return (
     <div className="about-section">
       <div className="about-main-heading-1">Who we are</div>
@@ -36,10 +64,28 @@ const AboutUs = () => {
           <br />
           Here&apos;s how our AI-powered robots become your helping hand:
         </div>
-        <div className="about-part-2-video-container">
-          <video autoPlay loop muted disablePictureInPicture preload="auto">
-            <source src={circleVideo} type="video/mp4" />
-          </video>
+        <div className="offerings-container">
+          <div className="first-offerings-part" >
+            <span className="offerings">Say Goodbye to  Back-Breaking Work 
+            <img src={arrow1} alt="" className="arrow-img"/>
+            </span>
+            <span className="offerings">Dishes? No Problem
+            <img src={arrow2} alt="" className="arrow-img"/>
+            </span>
+            <span className="offerings">Mopping made simple
+            <img src={arrow1} alt="" className="arrow-img-lower"/>
+            </span>
+          </div>
+          <div className="about-part-2-video-container">
+            <video autoPlay loop muted disablePictureInPicture preload="auto">
+              <source src={circleVideo} type="video/mp4" />
+            </video>
+          </div>
+          <div className="second-offerings-part">
+            <span className="offerings"><img src={arrow1} alt="" className="reverse-img"/>Assistance in minimalistic tasks</span>
+            <span className="offerings"><img src={arrow2} alt="" className="reverse-img"/>Peace of Mind, built in!</span>
+            <span className="offerings"><img src={arrow1} alt="" className="reverse-img-lower"/>Laundry made Easier</span>
+          </div>
         </div>
       </div>
 
@@ -47,7 +93,7 @@ const AboutUs = () => {
 
       <div className="survey-container">
         <div className="survey-content-part">
-        <div className="survey-title">Help us make smarter Homes</div>
+          <div className="survey-title">Help us make smarter Homes</div>
           <div className="survey-content">
             Your thoughts shape our robots. Take our quick survey (5 min) and
             share what matters in your home life.
@@ -56,7 +102,7 @@ const AboutUs = () => {
             Click below to share your voice.
           </div>
           <div className="survey-button-part">
-            <button className="survey-button">Share</button>
+            <button className="survey-button" onClick={openForm}>Share</button>
           </div>
         </div>
         <div className="survey-image-part">

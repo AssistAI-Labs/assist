@@ -21,6 +21,7 @@
     align-items: center;
     background-color: #00000000;
     padding-bottom: 1rem;
+    margin-top: 1rem;
     justify-content: flex-start;
     width: 20rem;
   }
@@ -54,6 +55,7 @@
     font-size: medium;
   }
   
+  
   .navbar-list a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -62,9 +64,30 @@
   .navbar-list-items a:hover {
     color: #0beffa;
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 10px; 
-    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c9c9c, 0 0 40px #9c9c9c, 0 0 70px #9c9c9c, 0 0 80px #9c9c9c, 0 0 100px #9c9c9c, 0 0 150px #9c9c9c; */
+}
+
+.navbar-list-items a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  display: block;
+  position: relative;
+}
+
+.navbar-list-items a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color:#0beffa;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar-list-items a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 /* for middle screen devices */
@@ -76,7 +99,7 @@
   .navbar-list-mobile {
     display: flex;
     height: 20rem;
-    z-index: 99;
+    z-index: 100;
     width: 100%;
     align-items: center;
     color:#ffffff;
@@ -86,7 +109,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.79);
+    background-color: rgb(0, 0, 0);
     right: 0;
   }
 

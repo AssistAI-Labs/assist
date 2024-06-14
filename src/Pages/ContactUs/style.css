@@ -65,6 +65,11 @@
     margin-top: 2rem;
     color: #ffffff;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

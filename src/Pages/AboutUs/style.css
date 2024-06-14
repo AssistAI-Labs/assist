@@ -63,17 +63,69 @@
     text-align: center;
 }
 
+.offerings-container {
+    display: flex;
+    width: 100%;
+}
+
+.first-offerings-part, .second-offerings-part {
+    display: flex;
+    color: #0beffa;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0.3;
+}
+
+.second-offerings-part {
+    text-align: right;
+}
+
+.offerings {
+    display: flex;
+    font-size: 0.8rem;
+    opacity: 0;
+    align-items: center;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .offerings.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reverse-img {
+    transform: scaleX(-1);
+  }
+
+  .reverse-img-lower {
+    transform: scaleY(-1) scaleX(-1);
+  }
+
+  .arrow-img, .arrow-img-lower {
+    margin-left: 1rem;
+  }
+
+  .arrow-img-lower {
+    transform: scaleY(-1);
+  }
+
+  .arrow-img, .reverse-img, .arrow-img-lower, .reverse-img-lower {
+    width: 10rem;
+  }
+
 .about-part-2-video-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    flex: 0.4;
 }
 
 
 video {
     -webkit-touch-callout: none;
-    width: 40rem;
+    width: 25rem;
 }
 
 .survey-container {
@@ -117,6 +169,11 @@ video {
     border-radius: 0.5rem;
     font-size: 0.8rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.survey-button:hover {
+    transform: scale(1.1);
 }
 
 .survey-image-part {
@@ -173,14 +230,30 @@ video {
     .about-part-2-content {
         margin: auto;
     }
+    .offerings {
+        font-size: 0.3rem;
+    }
+    .arrow-img, .reverse-img, .arrow-img-lower, .reverse-img-lower {
+        width: 3rem;
+      }
+
+      .arrow-img, .arrow-img-lower {
+        margin-left: 0;
+      }
+    
     video {
-        width: 20rem;
+        width: 9rem;
+        opacity: 0.9;
     }
     .survey-container {
         flex-direction: column;
     }
+    
     .survey-image-part {
-        margin: auto;
+        display: none;
+    }
+    .survey-content-part {
+        margin: 0;
     }
 }
 
