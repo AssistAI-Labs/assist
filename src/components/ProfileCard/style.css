@@ -69,8 +69,14 @@
 
 @media (max-width: 768px) {
     .profile-box {
-        width: 100%;
+        width: 80%;
         margin: auto;
         margin-top: 2rem;
+        height: 80%;
+    }
+
+    .profile-image-div {
+        width: 9rem;
+        height: 9rem;
     }
 }

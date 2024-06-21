@@ -23,6 +23,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setToggle(!toggle)}
               >
                 Home
               </Link>
@@ -34,7 +35,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                activeClass="active"
+                onClick={() => setToggle(!toggle)}
               >
                 About us
               </Link>
@@ -46,6 +47,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setToggle(!toggle)}
               >
                 Our team
               </Link>
@@ -57,6 +59,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                onClick={() => setToggle(!toggle)}
               >
                 Contact us
               </Link>

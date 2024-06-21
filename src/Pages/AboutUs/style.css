@@ -10,7 +10,7 @@
 
 .about-main-heading-1 {
     font-size: 2rem;
-    background: linear-gradient(to right, #0beffa,#193d86, #193d86);
+    background: linear-gradient(to right, #0beffa, #193d86,#193d86, #193d86);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -15,9 +15,9 @@ const Footer = () => {
       </div>
       <div className="extra-detail">
         <img src={gmail} alt="" className="icon" />
-        assistailabs@gmail.com
+        <a href="mailto:assistailabs@gmail.com">assistailabs@gmail.com</a>
       </div>
-      <div className="extra-detail">
+      <div className="extra-detail lower-section">
         <img src={india} className="icon" alt="" />
         +91 8700510741
       </div>

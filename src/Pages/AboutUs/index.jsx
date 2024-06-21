@@ -15,16 +15,28 @@ const AboutUs = () => {
       entries.forEach (entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          // observer.unobserve(entry.target);
+        }
+        if (!entry.isIntersecting) {
+          entry.target.classList.remove('visible');
+          // observer.unobserve(entry.target);
         }
       })
-    }, { threshold: 0.5 })
+    }, { threshold: 0.1 })
 
     if(offerings.length) {
       offerings.forEach (offer => {
         observer.observe(offer)
       })
     }
+
+    return () => {
+      if (offerings.length) {
+          offerings.forEach(offer => {
+              observer.unobserve(offer);
+          });
+      }
+  };
 
   }, [])
 
