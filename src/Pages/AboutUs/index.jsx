@@ -1,49 +1,48 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect} from "react";
 import robotimg from "../../assets/robo.png";
 import surveyimg from "../../assets/survey.png";
 import arrow1 from "../../assets/arrow1.png";
 import arrow2 from "../../assets/arrow2.png";
-import arrow3 from "../../assets/arrow3.png";
 import circleVideo from "../../assets/rotatingcircle.mp4";
 import "./style.css";
 
 const AboutUs = () => {
-  
   useEffect(() => {
-    const offerings = document.querySelectorAll(".offerings")
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach (entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          // observer.unobserve(entry.target);
-        }
-        if (!entry.isIntersecting) {
-          entry.target.classList.remove('visible');
-          // observer.unobserve(entry.target);
-        }
-      })
-    }, { threshold: 0.1 })
+    const offerings = document.querySelectorAll(".offerings");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            // observer.unobserve(entry.target);
+          }
+          if (!entry.isIntersecting) {
+            entry.target.classList.remove("visible");
+            // observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    if(offerings.length) {
-      offerings.forEach (offer => {
-        observer.observe(offer)
-      })
+    if (offerings.length) {
+      offerings.forEach((offer) => {
+        observer.observe(offer);
+      });
     }
 
     return () => {
       if (offerings.length) {
-          offerings.forEach(offer => {
-              observer.unobserve(offer);
-          });
+        offerings.forEach((offer) => {
+          observer.unobserve(offer);
+        });
       }
-  };
-
-  }, [])
+    };
+  }, []);
 
   const openForm = () => {
-    window.open('https://forms.gle/fXJFUXBSubQUz6zC9', '_blank');
+    window.open("https://forms.gle/fXJFUXBSubQUz6zC9", "_blank");
   };
-
 
   return (
     <div className="about-section">
@@ -68,38 +67,66 @@ const AboutUs = () => {
 
       <div className="about-main-heading-1">What we do</div>
 
-      <div className="about-part-2">
-        <div className="about-part-2-content">
-          Tired of repetitive chores stealing your precious time at home? <br />
-          At AssistAI Labs, we&apos;re revolutionizing home life with
-          intelligent robotic companions designed to tackle your everyday tasks.{" "}
-          <br />
-          Here&apos;s how our AI-powered robots become your helping hand:
+      <br />
+      <div className="about-part-2-content">
+        Tired of repetitive chores stealing your precious time at home? <br />
+        At AssistAI Labs, we&apos;re revolutionizing home life with intelligent
+        robotic companions designed to tackle your everyday tasks. <br />
+        Here&apos;s how our AI-powered robots become your helping hand:
+      </div>
+
+      <div className="div-main">
+        <div className="div-main-2">
+          <div className="div-1 offerings">
+            Say Goodbye to Back-Breaking Work{" "}
+          </div>
+          <div className="div-2 offerings">Dishes? No Problem</div>
+          <div className="div-3 offerings">Mopping made simple</div>
         </div>
-        <div className="offerings-container">
-          <div className="first-offerings-part" >
-            <span className="offerings">Say Goodbye to  Back-Breaking Work 
-            <img src={arrow1} alt="" className="arrow-img"/>
-            </span>
-            <span className="offerings">Dishes? No Problem
-            <img src={arrow2} alt="" className="arrow-img"/>
-            </span>
-            <span className="offerings">Mopping made simple
-            <img src={arrow1} alt="" className="arrow-img-lower"/>
-            </span>
+        <div className="div-main-3">
+          <div className="offerings">
+            <img src={arrow1} alt="" className="arrow-left arrow-size" />
           </div>
-          <div className="about-part-2-video-container">
-            <video autoPlay loop muted disablePictureInPicture preload="auto">
-              <source src={circleVideo} type="video/mp4" />
-            </video>
+          <div className="offerings">
+            <img src={arrow2} alt="" className="arrow-size-mid" />
           </div>
-          <div className="second-offerings-part">
-            <span className="offerings"><img src={arrow1} alt="" className="reverse-img"/>Assistance in minimalistic tasks</span>
-            <span className="offerings"><img src={arrow2} alt="" className="reverse-img"/>Peace of Mind, built in!</span>
-            <span className="offerings"><img src={arrow1} alt="" className="reverse-img-lower"/>Laundry made Easier</span>
+          <div className="offerings">
+            <img src={arrow1} alt="" className="arrow-size arrow-3" />
           </div>
+        </div>
+        <div className="video-div">
+          <video
+            autoPlay
+            loop
+            muted
+            disablePictureInPicture
+            preload="auto"
+            className="circle-video"
+          >
+            <source src={circleVideo} type="video/mp4" />
+          </video>
+        </div>
+        <div className="div-main-3">
+          <div className="offerings">
+            <img src={arrow1} alt="" className="arrow-size arrow-4" />
+          </div>
+          <div className="offerings">
+            <img src={arrow2} alt="" className="arrow-size-mid arrow-5" />
+          </div>
+          <div className="offerings">
+            <img src={arrow1} alt="" className="arrow-size arrow-6" />
+          </div>
+        </div>
+        <div className="div-main-2">
+          <div className="div-4 offerings">
+            Assistance in minimalistic tasks
+          </div>
+          <div className="div-5 offerings">Peace of Mind, built in!</div>
+          <div className="div-6 offerings">Laundry made Easier</div>
         </div>
       </div>
+
+      
 
       {/* part 3  */}
 
@@ -114,7 +141,9 @@ const AboutUs = () => {
             Click below to share your voice.
           </div>
           <div className="survey-button-part">
-            <button className="survey-button" onClick={openForm}>Share</button>
+            <button className="survey-button" onClick={openForm}>
+              Share
+            </button>
           </div>
         </div>
         <div className="survey-image-part">
