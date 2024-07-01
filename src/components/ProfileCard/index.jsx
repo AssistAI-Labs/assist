@@ -7,13 +7,13 @@ const ProfileCard = ({picture, name, link1 , link2}) => {
   return (
     <div className='profile-box'>
       <div className='profile-image-div'>
-        <img src={picture} alt="" />
+        <img src={picture} alt="abcdwbrwsv" />
       </div>
       <div className="profile-name">
         {name}
       </div>
       <div className="profile-buttons">
-        <FaLinkedin className='icon' />abcd
+        <FaLinkedin className='icon' />
         <FaGithub className='icon'/>
       </div>
     </div>
