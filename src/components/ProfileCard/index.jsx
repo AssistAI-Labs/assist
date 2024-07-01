@@ -7,7 +7,7 @@ const ProfileCard = ({picture, name, link1 , link2}) => {
   return (
     <div className='profile-box'>
       <div className='profile-image-div'>
-        <img src={picture} alt="abcdwbrwsv" />
+        <img src={picture} alt="" />
       </div>
       <div className="profile-name">
         {name}
