@@ -13,7 +13,8 @@ const ProfileCard = ({picture, name, link1 , link2}) => {
         {name}
       </div>
       <div className="profile-buttons">
-        <FaLinkedin className='icon' />
+        <a href= "www.google.com">
+        <FaLinkedin className='icon' /></div></a>
         <FaGithub className='icon'/>
       </div>
     </div>
